@@ -8,7 +8,7 @@ git clone https://github.com/stevenharradine/VirtualBreadboard.git
 
 ## build source code
 ```
-bash build
+bash build.sh
 ```
 
 ## run program
