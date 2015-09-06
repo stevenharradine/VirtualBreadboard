@@ -1,5 +1,5 @@
 # VirtualBreadboard
-A virtual breadboard for testing circuits
+A virtual breadboard for testing circuits.
 
 ## clone the repo
 ```
