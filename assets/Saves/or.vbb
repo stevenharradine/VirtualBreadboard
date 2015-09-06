@@ -1,0 +1,39 @@
+7
+0 wire11 11
+1 wire17 17
+60 wire17 17
+296 orChipPower 9
+297 orChipB4 9
+298 orChipA4 9
+299 orChipY4 9
+300 orChipB3 9
+301 orChipA3 9
+302 orChipY3 9
+355 orChipA1 9
+356 orChipB1 9
+357 orChipY1 9
+358 orChipA2 9
+359 orChipB2 9
+360 orChipY2 9
+361 orChipGND 9
+591 wire14 14
+592 wire15 15
+593 wire16 16
+597 wire12 12
+656 wire12 12
+707 wire13 13
+713 wire11 11
+718 wire14 14
+723 wire15 15
+755 wire16 16
+798 wire13 13
+
+11 java.awt.Color[r=0,g=0,b=0]
+12 java.awt.Color[r=0,g=0,b=0]
+13 java.awt.Color[r=0,g=0,b=0]
+14 java.awt.Color[r=255,g=0,b=0]
+15 java.awt.Color[r=255,g=0,b=0]
+16 java.awt.Color[r=0,g=255,b=0]
+17 java.awt.Color[r=0,g=0,b=0]
+0
+0
