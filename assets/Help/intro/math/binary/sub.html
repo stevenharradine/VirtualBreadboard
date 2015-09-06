@@ -1,0 +1,181 @@
+<html>
+	<head>
+		<link href="../../../common.css" type="text/css" rel="stylesheet">
+		<title>
+			Subtracting Binary Numbers
+		</title>
+		<style type="text/css">
+			table {
+				text-align: center;
+			}
+			caption, span {
+				font-size: 16pt;
+			}
+			th {
+				text-align: right;
+			}
+			hr {
+				color: black;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Subtracting Binary Numbers</h1>
+		<p>Subtracting binary numbers is done much like a CPU would do it.  We do not actually subtract any number but add the negative of the number.  So 100 - 011 is 100 + (-011).  To convert a binary number from positive to negative (or viseversa) we use a method called "<em>twos complement</em>".  This is done by inverting (1's become 0's and 0's become 1's) all the numbers to the left of the first one.  When this is done simply add the numbers together.</p>
+		<div>
+			<span>Example 1: 0100 - 0011</span>
+			<table>
+				<tr>
+					<td></td>
+					<td>0100</td>
+				</tr>
+				<tr>
+					<td>-</td>
+					<td>0011</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">Becomes</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>0100</td>
+				</tr>
+				<tr>
+					<td>+</td>
+					<td>1101</td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<th width="80px">Carry bits</th>
+					<td>1</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<th></th>
+				</tr>
+				<tr>
+					<th></th>
+					<td>0</td>
+					<td>1</td>
+					<td>0</td>
+					<td>0</td>
+					<th></th>
+				</tr>
+				<tr>
+					<th>+</th>
+					<td>1</td>
+					<td>1</td>
+					<td>0</td>
+					<td>1</td>
+					<th></th>
+				</tr>
+				<tr>
+					<th></th>
+					<td colspan="4" style="width=90px;"><hr></td>
+					<th></th>
+				</tr>
+				<tr>
+					<th></th>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>1</td>
+					<th></th>
+				</tr>
+			</table>
+			<p>Note: Any carry bits carried beond the far left colum do not get included!</p>
+			<br>
+			<span>Example 2: 1000 0011 - 1110 0111</span>
+			<table>
+				<tr>
+					<td width="20px"></td>
+					<td>1000 0011</td>
+				</tr>
+				<tr>
+					<td>-</td>
+					<td>1110 0111</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">Becomes</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>1000 0011</td>
+				</tr>
+				<tr>
+					<td>+</td>
+					<td>0001 1001</td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<th width="80px">Carry bits</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>1</td>
+					<td>1</td>
+					<td></td>
+					<th></th>
+				</tr>
+				<tr>
+					<th></th>
+					<td>1</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>1</td>
+					<td>1</td>
+					<th></th>
+				</tr>
+				<tr>
+					<th>+</th>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>1</td>
+					<td>1</td>
+					<td>0</td>
+					<td>0</td>
+					<td>1</td>
+					<th></th>
+				</tr>
+				<tr>
+					<th></th>
+					<td colspan="8" style="width=185px;"><hr></td>
+					<th></th>
+				</tr>
+				<tr>
+					<th>-</th>
+					<td>1</td>
+					<td>0</td>
+					<td>0</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>0</td>
+					<td>0</td>
+					<th></th>
+				</tr>
+				<tr>
+					<th></th>
+					<td>0</td>
+					<td>1</td>
+					<td>1</td>
+					<td>0</td>
+					<td>0</td>
+					<td>1</td>
+					<td>0</td>
+					<td>0</td>
+					<th></th>
+				</tr>
+			</table>
+			<p>Note: The answer is -100 in decimal.  Since the bottom number was greater then the top we know the answer is negative so we preform twos complement on it.
+		</div>
+	</body>
+</html>

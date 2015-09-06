@@ -1,0 +1,107 @@
+<html>
+	<head>
+		<link href="../common.css" type="text/css" rel="stylesheet">
+		<title>
+			Decimal to Binary
+		</title>
+		<style type="text/css">
+			table {
+				text-align: center;
+			}
+			caption {
+				font-size: 16pt;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Binary to Decimal</h1>
+		<p>To convert a Binary (base 2) number to Decimal (base 10) number you can use the following method.  Create a chart as below.  There should be as many colums as 1s and 0s in the number.  Lable the colums from right to left in the following order 1, 2, 4, 8, 16, 32, 64, 128.  If the numbers exceed 8 bits use the following formula to continue it v=n<sup>2</sup>.  Where v is the value and n is the colum number it is for.  When you write the binary number in the chart where ever there is a 1 add together all the colums values.  The sum of the numbers with a 1 is the decimal number.</p>
+		<div>
+			<table border="1">
+				<tr>
+					<td>128</td>
+					<td>64</td>
+					<td>32</td>
+					<td>16</td>
+					<td>8</td>
+					<td>4</td>
+					<td>2</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td width="15px"><br></td>
+					<td width="15px"><br></td>
+					<td width="15px"><br></td>
+					<td width="15px"><br></td>
+					<td width="15px"><br></td>
+					<td width="15px"><br></td>
+					<td width="15px"><br></td>
+					<td width="15px"><br></td>
+				</tr>
+			</table>
+			<br>
+			<table width="350px">
+				<caption>Example 1: Convert 11011 to Decimal</caption>
+				<tr>
+					<td>
+						<table border="1">
+							<tr>
+								<td>16</td>
+								<td>8</td>
+								<td>4</td>
+								<td>2</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td width="15px">1</td>
+								<td width="15px">1</td>
+								<td width="15px">0</td>
+								<td width="15px">1</td>
+								<td width="15px">1</td>
+							</tr>
+						</table>
+					<td>
+				</tr>
+				<tr>
+					<td>16 + 8 + 2 + 1 = 27</td>
+				</tr>
+				<tr>
+					<td><b>Decimal Number:</b> 27</td>
+				</tr>
+			</table>
+			<br>
+			<table width="350px">
+				<caption>Example 2: Convert 111000 to decimal</caption>
+				<tr>
+					<td>
+						<table border="1">
+							<tr>
+								<td>32</td>
+								<td>16</td>
+								<td>8</td>
+								<td>4</td>
+								<td>2</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td width="15px">1</td>
+								<td width="15px">1</td>
+								<td width="15px">1</td>
+								<td width="15px">0</td>
+								<td width="15px">0</td>
+								<td width="15px">0</td>
+							</tr>
+						</table>
+					<td>
+				</tr>
+				<tr>
+					<td>32 + 16 + 8 = 56</td>
+				</tr>
+				<tr>
+					<td><b>Decimal Number:</b> 56</td>
+				</tr>
+			</table>
+			Note: When you get better you will not need the chart!
+		</div>
+	</body>
+</html>

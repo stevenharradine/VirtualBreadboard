@@ -1,0 +1,157 @@
+<html>
+	<head>
+		<link href="../common.css" type="text/css" rel="stylesheet">
+		<style type="text/css">
+			tr {
+				height: 15px;
+			}
+			.breadboardSmall {
+				width: 584px;
+			}
+			.pinArraySmall {
+				width: 364px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>
+			What is a breadboard?
+		</h1>
+		<div>
+			<p>A breadboard is a piece of hardware that allows someone to create, test, and debug computer circuts before putting it on a miylar board.  They consist of a array of pins, power, input pins, output pins and ground pins.  Take note of the image in figure 1.1.</p>
+			<table>
+				<tr>
+					<td>
+						<img src="../Images/screen shots/breadboard with legend.jpg" alt="A breadboard with a breadboard with legend"><br>
+						<small class="breadboardSmall">Figure 1.1: This explains what and where every is</small>
+					</td>
+					<td>
+						<table>
+							<tr>
+								<td bgcolor="#0000FF" width="15">
+								</td>
+								<td>
+									Power Pins
+								</td>
+							</tr>
+							<tr>
+								<td bgcolor="#FFFF00">
+								</td>
+								<td>
+									Ground Pins
+								</td>
+							</tr>
+							<tr>
+								<td bgcolor="#FF0000">
+								</td>
+								<td>
+									Input Pins
+								</td>
+							</tr>
+							<tr>
+								<td bgcolor="#00FF00">
+								</td>
+								<td>
+									Output Pins
+								</td>
+							</tr>
+							<tr>
+								<td bgcolor="#00FFFF">
+								</td>
+								<td>
+									Pin Array
+								</td>
+							</tr>
+							<tr>
+								<td bgcolor="#FFAA00">
+								</td>
+								<td>
+									LEDs
+								</td>
+							</tr>
+							<tr>
+								<td bgcolor="#FC69CF">
+								</td>
+								<td>
+									Dip switches
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<p>
+			Power pins give a +5 volts to any wires or other devices conected to them.<br>
+			Ground pins are grounded and are needed to complete a circut.<br>
+			Dip Switches labeled 1 to 8 toggle the power flow through the input pins A to F respectively.<br>
+			Input pins supply a +5V when the corrasponding dipswitch is on.  The LED located above each one lets you know if that group of input pins has power.<br>
+			Output pins are grounded and turn on when a power is supplyed to them.
+			Pin array is where all your circutry is done.  It incorperates the power, input, output, and ground pins.<br>
+		</p>
+		<div>
+			<p>The pin array can be broken down even further into the top rail, the top half, the gap, the bottom half, and the bottom rail (Figure 1.2).</p>
+			<table>
+				<tr>
+					<td>
+						<img src="../Images/screen shots/pin array.jpg" alt="The breadboard's pin array with legend"><br>
+						<small class="pinArraySmall">Figure 1.2: This explains in depth the pin array</small>
+					</td>
+					<td>
+						<table>
+							<tr>
+								<td bgcolor="#0000FF" width="15">
+								</td>
+								<td>
+									Top rail
+								</td>
+							</tr>
+							<tr>
+								<td bgcolor="#FFFF00">
+								</td>
+								<td>
+									Top half
+								</td>
+							</tr>
+							<tr>
+								<td bgcolor="#FF0000">
+								</td>
+								<td>
+									The Gap
+								</td>
+							</tr>
+							<tr>
+								<td bgcolor="#00FF00">
+								</td>
+								<td>
+									Bottom Half
+								</td>
+							</tr>
+							<tr>
+								<td bgcolor="#00FFFF">
+								</td>
+								<td>
+									Bottom Rail
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		<div>
+		<p>
+			The top and bottom rails are connented horizontaly.  So if power is supplied to any pin in them they all are connected.  You generaly connect the +5V to the top rail and the ground to the bottom rail.  From there you would distrubute the power.<br>
+			The top half and bottom half are different.  Their pins are connected vertically and are separated by the "Gap".  This means that if power is given to a pin in the top half all the pins vertically from that pin in the top half would then have power.<br>
+			The gap is a very useful part of the breadboard.  It is the right space for a chip to be inserted (it also is the only place the "<em>Virtual Breadboard</em>" will let you put it).  Since the top and bottom half's pins are connected vertically it allows you to control each pin individualy.<br>
+		</p>
+		<p>To illistrate how the board is wired up please see the interactive Figure 1.3</p>
+		<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="364" HEIGHT="125" id="breadboard wiring" ALIGN="">
+			<PARAM NAME=movie VALUE="../flash/breadboard wiring.swf">
+			<PARAM NAME=quality VALUE=high>
+			<PARAM NAME=bgcolor VALUE=#FFFFFF>
+			<EMBED src="../flash/breadboard wiring.swf" quality=high bgcolor=#FFFFFF  WIDTH="364" HEIGHT="125" NAME="breadboard wiring" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></EMBED>
+		</OBJECT>
+		<br>
+		<small class="pinArraySmall">Figure 1.3: This illistrates how the breadboard pins are connected</small>
+	</body>
+</html>

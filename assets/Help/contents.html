@@ -1,0 +1,114 @@
+<html>
+	<head>
+		<script type="text/javaScript">
+			var address = document.location.href;
+			for (var i = 0; i < address.length; i++) {
+				if (address.substring(i,i + 5) == "page=") {
+					i += 5;
+					break;
+				}
+			}
+			var page = address.substring(i, address.length);
+		</script>
+		<style type="text/css">
+			body {
+				background-image: url("Images\background.png");
+				background-repeat: repeat;
+				background-position: left top;
+				background-attachment: fixed;
+				margin: 0px;
+			}
+			div.inner {
+				width: 205px;
+				height: 100%;
+				text-align: center;
+				background-color: #E5E5E5;
+				overflow: scroll;
+				padding-left: 5px;
+			}
+			div.outer {
+				height: 100%;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding: 10px;
+			}
+			p {
+				text-align: left;
+				font-size: 10pt;
+			}
+			span.secondary {
+				padding-left: 10px;
+			}
+			span.levelThree {
+				padding-left: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="outer">
+			<div class="inner">
+			<p>
+				<a href="contents.html?page=howto">How to use Virtual Breadboard</a><br>
+				<script type="text/javascript">
+					if (page == "howto") {
+						document.write ("<span class='secondary'><a href='howto/what is.html' target='view'>What is a breadboard?</a></span><br>");
+						document.write ("<span class='secondary'><a href='howto/layout.html' target='view'>Layout</a></span><br>");
+						document.write ("<span class='secondary'><a href='howto/using.html' target='view'>Using</a></span><br>");
+						document.write ("<span class='secondary'><a href='howto/options.html' target='view'>Options</a></span><br>");
+						document.write ("<span class='secondary'>Menus</span><br>");
+					}
+				</script>
+			</p>
+			<p>
+				<a href="contents.html?page=components">The components</a><br>
+				<script type="text/javascript">
+					if (page == "components") {
+						document.write ("<span class='secondary'><a href='components/power.html' target='view'>Power</a></span><br>");
+						document.write ("<span class='secondary'>Dipswitches</span><br>");
+						document.write ("<span class='secondary'>Wires</span><br>");
+						document.write ("<span class='secondary'>Chips</span><br>");
+						document.write ("<span class='secondary'>7 Segment Display</span><br>");
+						document.write ("<span class='secondary'>7 Segment Decoder Chip</span><br>");
+						document.write ("<span class='secondary'>LED</span><br>");
+						document.write ("<span class='secondary'>Button</span><br>");
+						document.write ("<span class='secondary'>Resistors</span><br>");
+					}
+				</script>
+			</p>
+			<p>
+				<a href="contents.html?page=saving">Saving / Opening</a><br>
+				<script type="text/javascript">
+					if (page == "saving") {
+						document.write ("<span class='secondary'><a href='saving/saving.html' target='view'>Saving a breadboard</a><br>");
+						document.write ("<span class='secondary'><a href='saving/opening.html' target='view'>Opening a breadboard</a><br>");
+						document.write ("<span class='secondary'><a href='saving/chip.html' target='view'>Saving a breadboard as a chip</a><br>");
+					}
+				</script>
+			</p>
+			<p>
+				<a href="contents.html?page=number">Intro to number systems</a><br>
+				<script type="text/javascript">
+					if (page == "number" || page == "binary" || page == "hex" || page == "convert") {
+						document.write ("<span class='secondary'><a href='contents.html?page=convert'>Converting number systems</a></span><br>");
+						if (page == "convert") {
+							document.write ("<span class='levelThree'><a href='intro/dec2bin.html' target='view'>Decimal to Binary</a></span><br>");
+							document.write ("<span class='levelThree'><a href='intro/dec2hex.html' target='view'>Decimal to Hex</a></span><br>");
+							document.write ("<span class='levelThree'><a href='intro/bin2dec.html' target='view'>Binary to Decimal</a></span><br>");
+							document.write ("<span class='levelThree'><a href='intro/bin2hex.html' target='view'>Binary to Hex</a></span><br>");
+							document.write ("<span class='levelThree'><a href='intro/hex2dec.html' target='view'>Hex to Decimal</a></span><br>");
+							document.write ("<span class='levelThree'><a href='intro/hex2bin.html' target='view'>Hex to Binary</a></span><br>");
+						}
+						document.write ("<span class='secondary'><a href='contents.html?page=binary'>Binary Math</a></span><br>");
+						if (page == "binary") {
+							document.write ("<span class='levelThree'><a href='intro/math/binary/add.html' target='view'>Addition</a></span><br>");
+							document.write ("<span class='levelThree'><a href='intro/math/binary/sub.html' target='view'>Subtraction</a></span><br>");
+							document.write ("<span class='levelThree'>Multiplication</span><br>");
+							document.write ("<span class='levelThree'>Division</span><br>");
+						}
+					}
+				</script>
+			</p>
+			</div>
+		</div>
+	</body>
+</html>

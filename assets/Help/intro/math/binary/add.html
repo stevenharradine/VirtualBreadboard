@@ -1,0 +1,135 @@
+<html>
+	<head>
+		<link href="../../../common.css" type="text/css" rel="stylesheet">
+		<title>
+			Adding Binary Numbers
+		</title>
+		<style type="text/css">
+			table {
+				text-align: center;
+				width: 350px;
+			}
+			caption {
+				font-size: 16pt;
+			}
+			th {
+				text-align: right;
+			}
+			td {
+				width: 20px;
+			}
+			hr {
+				color: black;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Adding Binary Numbers</h1>
+		<p>Adding binary numbers is much like adding decimal numbers.  When you add 6 and 4 together the answer is 10.  This is because it is a base 10 number system.  Each place value has ten numbers to represent a value.  When we run out of numbers in a place value we start a new one.  Binary numbers are simular except they use a base 2 number system.  So 1 + 1 in binary is not 2 cause that would need a third number thus the answer is 10 (not to be confused with the number ten).</p>
+		<div>
+			<p>The following is a list of binary numbers and how they are added together.</p>
+			0 + 0 = 0<br>
+			0 + 1 = 1<br>
+			1 + 0 = 1<br>
+			1 + 1 = 10 (carry of 1)<br>
+			<br>
+			<table>
+				<caption>Example 1: Add 1 and 1</caption>
+				<tr>
+					<th width="80px">Carry bits</th>
+					<td></td>
+					<td></td>
+					<td>1</td>
+					<td></td>
+					<th></th>
+				</tr>
+				<tr>
+					<th></th>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>1</td>
+					<th></th>
+				</tr>
+				<tr>
+					<th>+</th>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>1</td>
+					<th></th>
+				</tr>
+				<tr>
+					<th></th>
+					<td colspan="4" style="width=90px;"><hr></td>
+					<th></th>
+				</tr>
+				<tr>
+					<th></th>
+					<td>0</td>
+					<td>0</td>
+					<td>1</td>
+					<td>0</td>
+					<th></th>
+				</tr>
+			</table>
+			<br>
+			<table>
+				<caption>Example 2: Add 0010 0011 and 1000 0111</caption>
+				<tr>
+					<th width="80px">Carry bits</th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td></td>
+					<th></th>
+				</tr>
+				<tr>
+					<th></th>
+					<td>0</td>
+					<td>0</td>
+					<td>1</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>1</td>
+					<td>1</td>
+					<th></th>
+				</tr>
+				<tr>
+					<th>+</th>
+					<td>1</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<th></th>
+				</tr>
+				<tr>
+					<th></th>
+					<td colspan="8" style="width=185px;"><hr></td>
+					<th></th>
+				</tr>
+				<tr>
+					<th></th>
+					<td>1</td>
+					<td>0</td>
+					<td>1</td>
+					<td>0</td>
+					<td>1</td>
+					<td>0</td>
+					<td>1</td>
+					<td>0</td>
+					<th></th>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

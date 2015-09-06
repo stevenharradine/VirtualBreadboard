@@ -1,0 +1,114 @@
+<html>
+	<head>
+		<link href="../common.css" type="text/css" rel="stylesheet">
+		<title>
+			Decimal to Binary
+		</title>
+		<style type="text/css">
+			table {
+				text-align: center;
+			}
+			caption {
+				font-size: 16pt;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Decimal to Binary</h1>
+		<p>To convert a Decimal (base 10) number to binary (base 2) you can use a method called successive division.  To use this method you will take your decimal number and divide it by the number 2.  If the number is a whole number then it equals a 0, if it is not a whole number then it equals a 1.  Continue this till the number is no longer divisible by 2.</p>
+		<div>
+			<table>
+				<caption>Example 1: Convert 27 to binary</caption>
+				<tr>
+					<th>Number</th>
+					<th>Math</th>
+					<th>Binary reptesentation</th>
+					<th></th>
+				</tr>
+				<tr>
+					<td>27</td>
+					<td>27 / 2 = 13.5</td>
+					<td>1</td>
+					<td>Last Number</td>
+				</tr>
+				<tr>
+					<td>13</td>
+					<td>13 / 2 = 6.5</td>
+					<td>1</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>6 / 2 = 3</td>
+					<td>0</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>3 / 2 = 1.5</td>
+					<td>1</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>1 / 2 = 0.5</td>
+					<td>1</td>
+					<td>First Number</td>
+				</tr>
+				<tr>
+					<td colspan="4"><b>Binary Number:</b> 11011</td>
+				</tr>
+			</table>
+			<br>
+			<table>
+				<caption>Example 2: Convert 56 to binary</caption>
+				<tr>
+					<th>Number</th>
+					<th>Math</th>
+					<th>Binary reptesentation</th>
+					<th></th>
+				</tr>
+				<tr>
+					<td>56</td>
+					<td>56 / 2 = 28</td>
+					<td>0</td>
+					<td>Last Number</td>
+				</tr>
+				<tr>
+					<td>28</td>
+					<td>28 / 2 = 14</td>
+					<td>0</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>14</td>
+					<td>14 / 2 = 7</td>
+					<td>0</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>7 / 2 = 3.5</td>
+					<td>1</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>3 / 2 = 1.5</td>
+					<td>1</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>1 / 2 = 0.5</td>
+					<td>1</td>
+					<td>First Number</td>
+				</tr>
+				<tr>
+					<td colspan="4"><b>Binary Number:</b> 111000</td>
+				</tr>
+			</table>
+			Note: In most cases you will be required to answer a question in 8 bits.  In neither example are there 8 bits.  To fix this we add "<em>Leading Zeros</em>".  Leading zeros are zeros in front of the number to make it 8 bits long.  For example 11011 would become 0001 1011 and 111000 would become 0011 1000.  Use of these leading zeros do not change the value of the number.
+		</div>
+	</body>
+</html>

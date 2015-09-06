@@ -1,0 +1,32 @@
+body {
+	background-image: url("Images\background.png");
+	background-repeat: repeat;
+	background-position: left top;
+	background-attachment: fixed;
+}
+h1 {
+	padding-top: 17px;
+	text-align: center;
+	font-style: italic;
+}
+p {
+	text-align: left;
+}
+small {
+	margin-top: 5px;
+	height: 17px;
+	background-color: gray;
+	text-align: center;
+}
+.center, div {
+	text-align: center;
+}
+.right {
+	text-align: right;
+}
+.top {
+	vertical-align: top;
+}
+.bottom {
+	vertical-align: bottom;
+}

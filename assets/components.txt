@@ -1,0 +1,12 @@
+11
+andChipPower
+orChipPower
+xorChipPower
+notChipPower
+norChipPower
+nandChipPower
+decoderChipPower
+led+
+button
+resistor
+wire
