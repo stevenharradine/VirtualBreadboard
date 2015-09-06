@@ -1,0 +1,20 @@
+DONE	Saving / Save as w/ title bar
+DONE	remove 7-seg display and timer chips
+DONE	Create debugger / pin tester
+	wire/led/resistor Point1/2 var clear on new comp.
+	wire/led/resistor add indicator to show the pins selected
+	apply resistor array
+	ghost wire, led, resistors
+	change the default open dir (to installed specified / amend options.txt)
+	make saveAs() incorperate save()
+	on open error use "new()"
+
+	convert options file to random access
+
+Need internet
+	Create installer
+	file type .vbb
+
+Notes
+	test colour wires for OB when remove and add ... found NullPointer!
+	flip-flop Nand SR Clocked is solved apsolutely
