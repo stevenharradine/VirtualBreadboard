@@ -1,0 +1,145 @@
+body {
+	background-color: #A5D4E3;
+	margin: 0px;
+}
+
+a:link {
+	color: #000000;
+	text-decoration: underline;
+}
+a:active {
+	color: #A5D4E3;
+	text-decoration: underline;
+}
+a:visited {
+	color: #000000;
+	text-decoration: underline;
+}
+a:hover {
+	color: #A5D4E3;
+	text-decoration: none;
+}
+
+
+.header, .nav, .subLinksMain, .bottom2, .bottomSpan {
+	background-color: #EF4B4C;
+}
+
+.content {
+	position: absolute;
+	top: 35px;
+	left: 195px;
+}
+
+.nav {
+	position: relative;
+	top: 35px;
+
+	width: 175px;
+	padding-top: 10px;
+
+	font-weight: bold;
+	text-align: center;
+}
+img.navDiv {
+	width: 60px;
+	height: 2px;
+}
+span.nav-bottomRight{
+	position: relative;
+	padding-left: 139px;
+	bottom: -5px;
+}
+span.nav-right {
+	position: absolute;
+	left: 177px;
+	top: 36px;
+}
+img.nav-right {
+	width: 1px;
+	height: 99px;
+}
+span.nav-bottom{
+	position: relative;
+	left: -18px;
+}
+img.nav-bottom {
+	width: 139px;
+	height: 1px;
+}
+
+span.subLinksLinks {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.subLinksMain {
+	height: 36px;
+
+	padding-top: 7px;
+
+	position: absolute;
+	left: 275px;
+	right: 0px;
+	top: 35px;
+}
+span.nav-subLinksLeft {
+	position: absolute;
+	left: -34px;
+	top: 0px;
+}
+span.nav-subLinksRight {
+	position: absolute;
+	right: -34px;
+	top: 0px;
+}
+
+.news {
+	position: relative;
+	top: 35px;
+	width: 175px;
+}
+
+.header {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	padding-top: 6px;
+	padding-left: 50px;
+
+	width: 100%;
+	height: 35px;
+}
+
+.bottom {
+	position: absolute;
+	bottom: 0px;
+
+	width: 100%;
+	text-align: center;
+}
+span.bottom2 {
+	padding-top: 15px;
+
+	width: 300px;
+	height: 71px;
+}
+
+span.bottomNav1, span.bottomNav2 {
+	position: absolute;
+	bottom: -1px;
+}
+span.bottomNav1 {
+	margin-left: -25px;
+}
+span.bottomNav2 {
+	margin-left: 50px;
+}
+
+.bottomSpan {
+	position: absolute;
+	bottom: 0px;
+
+	width: 100%;
+	height: 15px;
+}
